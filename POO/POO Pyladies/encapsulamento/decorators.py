@@ -3,17 +3,18 @@ class Pyladies:
         self.Nome = nome
         self.Qtd_membros = qtd_membros
         self.Tem_homens = tem_homens
-    
+
     @property #método get
     def Nome(self): 
-        return self.__Nome
+        return self._Nome
 
     @Nome.setter
-    def __Nome(self, nome):
-       self.__Nome = nome
+    def Nome(self, nome):
+       self._Nome = nome
+
    
-pyladies_bauru = Pyladies("Pyladies Bauru", 10, True)
-pyladies_bauru.Nome = "Juliana"
-print(pyladies_bauru.Nome)
+pyladies_sanca = Pyladies("Pyladies Bauru", 10, True)
+
+print(pyladies_sanca.Creators)
 
 
