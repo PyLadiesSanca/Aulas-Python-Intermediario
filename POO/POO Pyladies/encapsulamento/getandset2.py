@@ -1,16 +1,19 @@
+#neste código mostraremos por que utilizar metodos get e set para
+#a obtençao e modificaçao do atributo se tornar complexa como queira
 class Pyladies:
     def __init__ (self, nome, qtd_membros,tem_homens): 
-        self.__Nome = nome
-        self.__Qtd_membros = qtd_membros
-        self.__Tem_homens = tem_homens
-        self.creators = {'Name':[],"E-mail":[]}
+        self.__Nome = nome #privado
+        self.__Qtd_membros = qtd_membros #privado
+        self.__Tem_homens = tem_homens #privado
+        #supondo que criei um dicionário para os fundadores do capitulo:
+        self.creators = {'Name':[],"E-mail":[]} #publico
     
-    def SetCreators(self, name,email):
+    def SetCreators(self, name,email): #atributos sendo modificados
         print("Seus atributando foram setados")
         self.creators['Name'].append(name)
         self.creators['E-mail'].append(email)
     
-    def GetCreators(self):
+    def GetCreators(self): #obtendo o atributo
         if self.creators['Name'] == []:
             return None
         else:
