@@ -1,4 +1,4 @@
-class Animal:
+class Animal: #classe mãe
     def __init__ (self, Nome,Peso,Altura): 
         self._Nome = Nome
         self._Peso = Peso

@@ -1,3 +1,4 @@
+#introdução a get() e set() em código modularizado
 class Pyladies:
     def __init__ (self, Nome, Qtd_membros, tem_homens,nome_membros,data_criacao): 
         self.__Nome = Nome
@@ -7,7 +8,7 @@ class Pyladies:
         self.__Data_Criacao = data_criacao
     
     def GetNome(self):
-        return self.Qtd_membros
+        return self.Nome
     
     def SetNome(self,valor):
         self.__Nome = valor

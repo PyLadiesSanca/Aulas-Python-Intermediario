@@ -1,3 +1,4 @@
+#aprendendo a utilizar property para métodos get() e set()
 class Pyladies:
     def __init__ (self, nome, qtd_membros,tem_homens): 
         self.__setado = False
