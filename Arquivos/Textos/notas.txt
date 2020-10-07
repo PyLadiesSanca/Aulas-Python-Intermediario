@@ -1,0 +1,5 @@
+joana 8 7 9
+maria 2 5 6
+suzana 5.2 8 8
+gisela 0 5 3
+julieta 7 7 9
